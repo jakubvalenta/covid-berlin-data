@@ -1,0 +1,3 @@
+[submodule "coronavirus-berlin-scraper"]
+	path = coronavirus-berlin-scraper
+	url = gitea@lab.saloun.cz:jakub/coronavirus-berlin-scraper.git
