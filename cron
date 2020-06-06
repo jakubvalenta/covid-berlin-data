@@ -8,5 +8,5 @@ log_file="$log_dir/cron-$(date "+%y%m%d_%H%M%S").log"
 mkdir -p "$log_dir"
 
 cd "$dir"
-make clean run 2>&1 | tee -a "$log_file"
+make download-feed parse-press-releases 2>&1 | tee -a "$log_file"
 ./bin/delete-old-files "$log_dir" 50 2>&1 | tee -a "$log_file"
