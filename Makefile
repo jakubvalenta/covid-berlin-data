@@ -1,8 +1,26 @@
 _dir := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
-_project_dir := $(_dir)/coronavirus-berlin-scraper
 
-export cache_path := $(_dir)/cache
-export output_path := $(_dir)/coronavirus_data_berlin.csv
+cache_path ?= $(_dir)/cache
+output_path ?= $(_dir)/covid_berlin_data.csv
 
-%:
-	cd "$(_project_dir)" && $(MAKE) $@
+_cmd := covid-berlin-scraper -a "$(cache_path)" -v
+
+.PHONY: download-feed
+download-feed:  ## Download feed
+	$(_cmd) download-feed
+
+.PHONY: download-archives
+download-archives:  ## Download archives
+	$(_cmd) download-archives
+
+.PHONY: parse-press-releases
+parse-press-releases:  ## Parse press releases
+	$(_cmd) parse-press-releases -o "$(output_path)"
+
+.PHONY: setup
+setup:  ## Install dependencies
+	pip install -r requirements.txt
+
+.PHONY: help
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-16s\033[0m %s\n", $$1, $$2}'

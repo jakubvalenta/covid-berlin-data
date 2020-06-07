@@ -1,4 +1,4 @@
-# Coronavirus Berlin Data
+# Covid Berlin Data
 
 ## Installation
 
@@ -15,7 +15,7 @@ $ make clean run
 ### Cron
 
 ```
-*/30 * * * *  source ~/.profile; bash ~/coronavirus-berlin-data/cron
+*/30 * * * *  . ~/.profile; bash ~/covid-berlin-data/cron
 ```
 
 ## License

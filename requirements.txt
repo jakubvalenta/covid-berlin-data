@@ -1,0 +1,1 @@
+-e git+https://www.github.com/jakubvalenta/covid-berlin-scraper.git#egg=covid-berlin-scraper

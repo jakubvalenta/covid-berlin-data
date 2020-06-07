@@ -7,6 +7,22 @@ log_dir="$dir/log"
 log_file="$log_dir/cron-$(date "+%y%m%d_%H%M%S").log"
 mkdir -p "$log_dir"
 
+delete_old_files() {
+    dir=$1
+    keep_num=$2
+    find "$dir" -maxdepth 1 -type f -printf '%T@ %p\0' | \
+        sort -zrn | \
+        tail -z -n "+$((keep_num+1))" | \
+        cut -z -d ' ' -f '2-' | \
+        xargs -0 -n1 -I {} sh -c '[[ -n "{}" ]] && rm -v "{}"'
+}
+
 cd "$dir"
-make download-feed parse-press-releases 2>&1 | tee -a "$log_file"
-./bin/delete-old-files "$log_dir" 50 2>&1 | tee -a "$log_file"
+(
+    make download-feed parse-press-releases 2>&1 | tee -a "$log_file"
+    git add covid_berlin_data.csv
+    git commit -m "New data"
+    git pull --rebase 2>&1 | tee -a "$log_file"
+    git push 2>&1 | tee -a "$log_file"
+)
+delete_old_files "$log_dir" 10 2>&1 | tee -a "$log_file"
