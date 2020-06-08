@@ -14,6 +14,10 @@ date,cases,recovered,deaths
 2020-06-06,6996,6455,205
 ```
 
+## Chart
+
+https://datawrapper.dwcdn.net/CqRim/3/
+
 ## Source
 
 The data come from the official press releases of the city of Berlin:
