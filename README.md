@@ -5,8 +5,6 @@ Germany. Updated daily.
 
 [covid_berlin_data.csv](./covid_berlin_data.csv)
 
-<iframe title="Covid-19 in Berlin" aria-label="Interactive area chart" id="datawrapper-chart-CqRim" src="https://datawrapper.dwcdn.net/CqRim/2/" scrolling="no" frameborder="0" style="border: none;" width="600" height="400"></iframe>
-
 ## Preview
 
 ``` csv
