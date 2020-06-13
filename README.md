@@ -1,17 +1,18 @@
 # Covid-19 Data in Berlin
 
-Data on the number of coronavirus cases, recovered cases and deaths in Berlin,
-Germany. Updated daily.
+Data on the number of coronavirus cases, recovered cases, deaths, and
+hospitalized people in Berlin, Germany. Updated daily around 19:00 (Berlin
+time).
 
-[covid_berlin_data.csv](./covid_berlin_data.csv)
+[covid_berlin_data_incl_hospitalized.csv](./covid_berlin_data_inc_hospitalized.csv)
 
 ## Preview
 
 ``` csv
-date,cases,recovered,deaths
-2020-06-04,6945,6412,200
-2020-06-05,6963,6443,201
-2020-06-06,6996,6455,205
+date,cases,recovered,deaths,hospitalized,icu
+2020-06-10,7135,6559,208,127,41
+2020-06-11,7164,6582,208,124,42
+2020-06-12,7251,6609,208,126,42
 ```
 
 ## Chart
