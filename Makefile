@@ -2,6 +2,7 @@ _dir := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 
 cache_path ?= $(_dir)/cache
 output_path ?= $(_dir)/covid_berlin_data.csv
+output_hosp_path ?= $(_dir)/covid_berlin_data_incl_hospitalized.csv
 
 _cmd := covid-berlin-scraper -a "$(cache_path)" -v
 
@@ -15,7 +16,7 @@ download-archives:  ## Download archives
 
 .PHONY: parse-press-releases
 parse-press-releases:  ## Parse press releases
-	$(_cmd) parse-press-releases -o "$(output_path)"
+	$(_cmd) parse-press-releases -o "$(output_path)" --output-hosp "$(output_hosp_path)"
 
 .PHONY: setup
 setup:  ## Install dependencies
