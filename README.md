@@ -4,7 +4,7 @@ Data on the number of coronavirus cases, recovered cases, deaths, and
 hospitalized people in Berlin, Germany. Updated daily around 19:00 (Berlin
 time).
 
-[covid_berlin_data_incl_hospitalized.csv](./covid_berlin_data_inc_hospitalized.csv)
+[covid_berlin_data_incl_hospitalized.csv](./covid_berlin_data_incl_hospitalized.csv)
 
 ## Preview
 
