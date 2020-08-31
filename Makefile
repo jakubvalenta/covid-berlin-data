@@ -7,8 +7,12 @@ output_hosp_path ?= $(_dir)/covid_berlin_data_incl_hospitalized.csv
 _cmd := covid-berlin-scraper -a "$(cache_path)" -v
 
 .PHONY: download-feed
-download-feed:  ## Download feed
+download-feed:  ## Download current feed
 	$(_cmd) download-feed
+
+.PHONY: download-district-table
+download-district-table:  ## Download current district table
+	$(_cmd) download-district-table
 
 .PHONY: download-archives
 download-archives:  ## Download archives
