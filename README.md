@@ -6,6 +6,11 @@ time).
 
 [covid_berlin_data_incl_hospitalized.csv](./covid_berlin_data_incl_hospitalized.csv)
 
+**UPDATE: On August 31, the city of Berlin [stopped
+publishing](https://www.berlin.de/sen/gpg/service/presse/2020/pressemitteilung.983232.php)
+the press releases that were the source of the data in this repo. I'm currently
+searching for a new data source.**
+
 ## Preview
 
 ``` csv
