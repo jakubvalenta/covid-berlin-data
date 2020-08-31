@@ -19,7 +19,7 @@ delete_old_files() {
 
 cd "$dir"
 (
-    make download-feed parse-press-releases 2>&1 | tee -a "$log_file"
+    make download-feed download-csv parse-press-releases 2>&1 | tee -a "$log_file"
     git add covid_berlin_data.csv covid_berlin_data_incl_hospitalized.csv
     git commit -m "New data"
     git pull --rebase 2>&1 | tee -a "$log_file"
