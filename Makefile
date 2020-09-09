@@ -14,6 +14,10 @@ download-feed:  ## Download current feed
 download-district-table:  ## Download current district table
 	$(_cmd) download-district-table
 
+.PHONY: download-dashboard
+download-dashboard:  ## Download current dashboard
+	$(_cmd) download-dashboard
+
 .PHONY: download-archives
 download-archives:  ## Download archives
 	$(_cmd) download-archives
