@@ -6,8 +6,8 @@ time).
 
 [covid_berlin_data_incl_hospitalized.csv](./covid_berlin_data_incl_hospitalized.csv)
 
-**UPDATE: Since August 31, the data is missing the number of deaths,
-hospitalized patients and ICU patients, because the city [stopped
+**UPDATE: Since August 31, the data is missing the number of hospitalized
+patients and ICU patients, because the city [stopped
 publishing](https://www.berlin.de/sen/gpg/service/presse/2020/pressemitteilung.983232.php)
 the press releases that were the source of this data.**
 
@@ -26,12 +26,18 @@ https://datawrapper.dwcdn.net/CqRim/3/
 
 ## Source
 
-The data come from the official press releases of the city of Berlin:
-[Pressemitteilungen der Senatsverwaltung für Gesundheit, Pflege und
+Until August 30, the data come from the official press releases of the city of
+Berlin: [Pressemitteilungen der Senatsverwaltung für Gesundheit, Pflege und
 Gleichstellung](https://www.berlin.de/sen/gpg/service/presse/2020/).
 
-The website of the city of Berlin is checked for a new data every 30 minutes
-using
+From August 31 to September 9, the data come from the table [COVID-19 in Berlin,
+Verteilung in den
+Bezirken](https://www.berlin.de/lageso/gesundheit/infektionsepidemiologie-infektionsschutz/corona/tabelle-bezirke/).
+
+Since September 10, the data come from the dashboard [COVID-19 in
+Berlin](https://www.berlin.de/corona/lagebericht/desktop/corona.html).
+
+The data are downloaded every 30 minutes using
 [covid-berlin-scraper](https://www.github.com/jakubvalenta/covid-berlin-scraper).
 
 ## Date
