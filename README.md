@@ -1,15 +1,10 @@
 # Covid-19 Data in Berlin
 
 Data on the number of coronavirus cases, recovered cases, deaths, hospitalized
-patients and ICU patients in Berlin, Germany. Updated daily around 19:00 (Berlin
+patients and ICU patients in Berlin, Germany. Updated daily around 17:00 (Berlin
 time).
 
 [covid_berlin_data_incl_hospitalized.csv](./covid_berlin_data_incl_hospitalized.csv)
-
-**UPDATE: Since August 31, the data is missing the number of hospitalized
-patients and ICU patients, because the city [stopped
-publishing](https://www.berlin.de/sen/gpg/service/presse/2020/pressemitteilung.983232.php)
-the press releases that were the source of this data.**
 
 ## Preview
 
@@ -22,7 +17,7 @@ date,cases,recovered,deaths,hospitalized,icu
 
 ## Chart
 
-https://datawrapper.dwcdn.net/CqRim/3/
+https://datawrapper.dwcdn.net/CqRim/6/
 
 ## Source
 
@@ -30,11 +25,12 @@ Until August 30, the data come from the official press releases of the city of
 Berlin: [Pressemitteilungen der Senatsverwaltung für Gesundheit, Pflege und
 Gleichstellung](https://www.berlin.de/sen/gpg/service/presse/2020/).
 
-From August 31 to September 9, the data come from the table [COVID-19 in Berlin,
+From August 31 to September 8, the data come from the table [COVID-19 in Berlin,
 Verteilung in den
-Bezirken](https://www.berlin.de/lageso/gesundheit/infektionsepidemiologie-infektionsschutz/corona/tabelle-bezirke/).
+Bezirken](https://www.berlin.de/lageso/gesundheit/infektionsepidemiologie-infektionsschutz/corona/tabelle-bezirke/). These
+data are missing the number of hospitalized and ICU patients.
 
-Since September 10, the data come from the dashboard [COVID-19 in
+Since September 9, the data come from the dashboard [COVID-19 in
 Berlin](https://www.berlin.de/corona/lagebericht/desktop/corona.html).
 
 The data are downloaded every 30 minutes using
