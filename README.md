@@ -1,25 +1,37 @@
 # Covid-19 Data in Berlin
 
-Covid-19 data for Berlin (Germany) as a spreadsheet file (CSV format). The file
-contains the following data recorded every day since the first infection:
+Covid-19 data for Berlin (Germany) as a spreadsheet file (CSV format).
+
+[covid_berlin_data_incl_hospitalized.csv](./covid_berlin_data_incl_hospitalized.csv)
+
+Until April 4, 2023, the data include:
 
 - total number of cases
-- total number of recovered cases
 - total number of deaths
+- total number of recovered cases
 - number of patients currently hospitalized with Covid-19
 - number of patients currently hospitalized with Covid-19 on ICU
 
-The data are updated daily around 07:40 (Berlin time).
+Since April 5, 2023, the data include:
 
-[covid_berlin_data_incl_hospitalized.csv](./covid_berlin_data_incl_hospitalized.csv)
+- total number of cases
+- total number of deaths
+
+Until June 4, 2023, the data had been published by the city of Berlin every
+weekday. Since then, the data has been published only once a week.
+
+The data are updated every Tuesday around 07:40 (Berlin time).
 
 ## Preview
 
 ``` csv
 date,cases,recovered,deaths,hospitalized,icu
-2020-06-10,7135,6559,208,127,41
-2020-06-11,7164,6582,208,124,42
-2020-06-12,7251,6609,208,126,42
+2023-03-31,1436589,1425163,5656,777,52
+2023-04-01,1436724,1425333,5662,777,52
+2023-04-04,1436960,1425745,5667,777,52
+2023-04-05,1437240,,5658,,
+2023-04-06,1437440,,5662,,
+2023-04-07,1437595,,5666,,
 ```
 
 ## Chart
